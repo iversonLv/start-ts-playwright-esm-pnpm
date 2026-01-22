@@ -36,6 +36,9 @@ jobs:
         run: |
           npx allure generate ./out/allure-results --clean -o allure-report
 
+      - name: Add .nojekyll
+        run: echo "" > allure-report/.nojekyll
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
