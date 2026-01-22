@@ -4,6 +4,8 @@ node_modules/
 # Build output
 out/
 allure-results/
+allure-report
+.last-run.json
 
 # Environment files
 environment.properties

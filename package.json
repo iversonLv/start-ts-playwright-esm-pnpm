@@ -1,6 +1,6 @@
 {
   "name": "playwright",
-  "type": "module",  
+  "type": "module",
   "version": "1.0.0",
   "description": "",
   "scripts": {
@@ -10,10 +10,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "^20.17.6",
-    "typescript": "^5.6.3",
     "@playwright/test": "^1.48.2",
+    "@types/node": "^20.17.6",
+    "allure-commandline": "^2.36.0",
+    "allure-js-commons": "^3.0.6",
     "allure-playwright": "^3.0.6",
-    "allure-js-commons": "^3.0.6"
+    "typescript": "^5.6.3"
   }
 }
