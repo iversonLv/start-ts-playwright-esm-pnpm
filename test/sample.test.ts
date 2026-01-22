@@ -1,0 +1,13 @@
+import { test } from "@playwright/test";
+import * as allure from "allure-js-commons";
+
+test("sample test", async () => {
+  await allure.links(...[{ url: "https://example.org"}]);
+  await allure.owner("John Doe");
+  await allure.issue("JIRA-2", "https://example.org");
+  
+  await test.info().attach('text attachment', {
+    body: 'a',
+    contentType: 'text/plain',
+  });
+});
